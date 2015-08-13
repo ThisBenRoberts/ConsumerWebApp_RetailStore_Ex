@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nameofapp</title>
+  <title>Rotary Realm</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>  
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
 
 </head>
-<body>
-<h1>Welcome to Rotary Realm</h1>
-<h2>Everything you need to keep your car running and looking its best</h2>
+<body data-spy="scroll" data-target=".navbar">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"  data-toggle="collapse" data-target=".navbar-collapse" >
+      <div class="container-fluid">
+        
+        <div class="navbar-header" ><!--  get rid ofthis border  --> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName">
+            <a href="#">HOME</a>
+            <a href="https://twitter.com/901_ideas" class="twitter-follow-button" data-show-count="false">
+              Follow @901_ideas</a>
+                
+          </div>
+        </div> 
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"><!-- style="background-color:#333333" -->
+              <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+              <li class="<%= 'active' if current_page?(static_pages_products_path) %>"><%= link_to "Products", static_pages_products_path %></li>
+              <li class="<%= 'active' if current_page?(static_pages_contact_path) %>"><%= link_to "Contact", static_pages_contact_path %></li>
+              <li class="<%= 'active' if current_page?(static_pages_about_path) %>"><%= link_to "About", static_pages_about_path %></li>
+              <li class="<%= 'active' if current_page?(static_pages_faq_path) %>"><%= link_to "FAQ", static_pages_faq_path %></li>
+              
+            </ul>
+        </div>
+
+      </div> 
+
+    </nav> <!-- /nav -->
 
 <%= yield %>
 
+<footer> &copy; Copyright 2015 901Ideas, Inc. | All Rights Reserved
+
+      
+             <div id="fbbtn" class="fb-page" data-href="https://www.facebook.com/901ideas" data-width="180" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote id="" cite="https://www.facebook.com/901ideas">
+            <a href="https://www.facebook.com/901ideas">Like us on fb</a>
+          </blockquote>
+        </div>
+      </div>
+
+    </footer>
 </body>
 </html>

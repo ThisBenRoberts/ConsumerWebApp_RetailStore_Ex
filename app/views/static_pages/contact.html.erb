@@ -1,2 +1,38 @@
-<h1>StaticPages#contact</h1>
+<div class="jumbotron" >
+	<div class="container-fluid anchor" >
+		<h1>Welcome to Rotary Realm</h1>
+		<h2>This is the Contact page</h2>
+	</div>
+</div>
+
+<div id="contact_form">
+ <div class="col-sm-8 col-md-8 col-lg-8" >
+	<form>
+	  <div class="form-group">
+	    <label for="name"> Your Name: </label>
+	    <input placeholder="First and Last Name" type="text" class="form-control" required=”required” name="flname" id="name">
+	  </div>
+	  <div class="form-group">
+	    <label for="teln"> Phone Number: </label>
+	    <input placeholder="Phone Number" type=”tel” minlength="10" maxlength="12" class="form-control" name="teln" id="teln" >  <!-- pattern="{3}[\-]\d{3}[\-]\d{4}" -->
+	  </div>
+	  <div class="form-group">
+	    <label for="email"> Email Address: </label>
+	    <input placeholder="Email" type="email" class="form-control" required=”required” name="email" id="email">
+	  </div>
+	  <div class="form-group">
+	    <label for="message"> What can we do for you?: </label>
+	    <textarea placeholder="What's on your mind?"  style="width:100%; resize:none; color:black" rows="3" class="message-box" required=”required” name="message" id="message"></textarea>
+
+	  </div>
+	  <button type="submit" class="btn btn-default">Send</button>
+	</form>
+  </div>
+</div> <!-- / Contact Form -->
+<div class="col-xs-12 col-sm-12 col-md-12">
+	<%= image_tag("rotary.jpg") %>
+</div>
+<h1>StaticPages#conatct</h1>
 <p>Find me in app/views/static_pages/contact.html.erb</p>
+<p>Welcome! The date and time is <%= Time.now %></p>
+<!-- <h1>The Contact Page</h1> -->

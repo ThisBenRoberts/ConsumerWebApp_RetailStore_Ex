@@ -1,0 +1,21 @@
+
+
+.nav {
+    float: right;
+    background-color:#333333;
+}
+
+.projectName {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 13px;
+}
+
+.projectName a {
+    color: white;
+    padding: 15px;
+}
+
+.navbar-fixed-top {
+	height:60px
+}

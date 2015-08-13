@@ -30,8 +30,8 @@
           </div>
         </div> 
 
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav"><!-- style="background-color:#333333" -->
+        <div class="navbar-collapse collapse" id="nav">
+            <ul class="nav navbar-nav">
               <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
               <li class="<%= 'active' if current_page?(static_pages_products_path) %>"><%= link_to "Products", static_pages_products_path %></li>
               <li class="<%= 'active' if current_page?(static_pages_contact_path) %>"><%= link_to "Contact", static_pages_contact_path %></li>
@@ -47,17 +47,17 @@
 
 <%= yield %>
 
-<footer> &copy; Copyright 2015 901Ideas, Inc. | All Rights Reserved
+<footer> <div> &copy; Copyright 2015 901Ideas, Inc. | All Rights Reserved
 
       
              <div id="fbbtn" class="fb-page" data-href="https://www.facebook.com/901ideas" data-width="180" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false">
         <div class="fb-xfbml-parse-ignore">
-          <blockquote id="" cite="https://www.facebook.com/901ideas">
+          
             <a href="https://www.facebook.com/901ideas">Like us on fb</a>
-          </blockquote>
+          
         </div>
       </div>
-
+</div>
     </footer>
 </body>
 </html>

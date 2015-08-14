@@ -19,3 +19,8 @@
 .navbar-fixed-top {
 	height:60px
 }
+
+.twitter-follow-button {
+	height: 100%;
+	z-index: 5;
+}

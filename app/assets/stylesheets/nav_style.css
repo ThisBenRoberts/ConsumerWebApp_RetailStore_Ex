@@ -3,7 +3,10 @@
 .navbar .nav {
     float: right;
     background-color:#333333;
+
 }
+
+
 
 .projectName {
     text-transform: uppercase;
@@ -27,5 +30,6 @@
 
 .navbar-collapse {
     float: right;
-    width: 50%
+    /*width: 50%*/
 }
+

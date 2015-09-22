@@ -19,6 +19,17 @@
 .navbar .nav {
     float: right;
     background-color:#333333;
+    
+}
+
+#q {
+	margin:0;
+	padding:0;
+	height:25px;
+}
+
+#search {
+	padding: 15px;
 }
 
 #fbbtn {
@@ -27,4 +38,9 @@
 
 .carousel-indicators {
 	left: 20%;
+}
+
+.carousel-inner > .item > img{
+
+margin: auto;
 }
